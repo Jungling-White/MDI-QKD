@@ -1,0 +1,6 @@
+#!/bin/bash
+#BSUB  -q   mpi
+#BSUB  -n   48
+#BSUB -o %job_15_10_as.out
+#BSUB -e %job_15_10_as.err
+matlab  -nodisplay   -nosplash -nodesktop -r "cd  code_final/task_12_10_6; run GA_15_10_as.m;"
